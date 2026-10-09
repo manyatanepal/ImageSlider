@@ -14,6 +14,7 @@ class ImageSlider {
         this.slide = Array.from(this.track.children); 
         this.prevBtn = this.slider.querySelector('.prev'); 
         this.nextBtn = this.slider.querySelector('.next'); 
+        this.sliderFrame = document.querySelector(".slider-frame");
         this.autoSlide = null; 
  
         this.dotsContainer = document.querySelector(".slider-dots"); 
@@ -27,12 +28,12 @@ class ImageSlider {
         this.bindEvents(); 
         this.updateSliderPosition(); 
  
-        this.slider.addEventListener("mouseenter", () => { 
-            this.stopAutoSlide(); 
+        this.sliderFrame.addEventListener("mouseenter", () => {
+            this.stopAutoSlide();
         }); 
  
-        this.slider.addEventListener("mouseleave", () => { 
-            this.startAutoSlide(); 
+        this.sliderFrame.addEventListener("mouseleave", () => {
+            this.startAutoSlide();
         }); 
  
         this.startAutoSlide(); 
