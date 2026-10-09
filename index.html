@@ -5,26 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Image Slider</title>
 </head>
 
 <body>
 
-    <div class="slider">
+    <div class="slider-frame">
+        <div class="slider">
+            <div class="slider-track">
 
-        <div class="slider-track">
+                <div class="slide"><img src="images/profile.jpg" alt="profile"></div>
+                <div class="slide"><img src="images/Spongebob.jpg" alt="Spongebob"></div>
+                <div class="slide"><img src="images/Stitch.jpeg" alt="Stitch"></div>
+                <div class="slide"><img src="images/Nobita.jpeg" alt="Nobita"></div>
+                <div class="slide"><img src="images/Disney.jpg" alt="Disney"></div> 
+            </div>
 
-            <div class="slide"> <img src="images/Disney.jpeg" alt="Slide 1"></div>
-            <div class="slide"> <img src="images/Tulip.jpeg" alt="Slide 2"></div>
-            <div class="slide"> <img src="images/Nobita.jpeg" alt="Slide 3"></div>
-            <div class="slide"> <img src="images/Panda.jpg" alt="Slide 4"></div>
-            <div class="slide"> <img src="images/Stitch.jpeg" alt="Slide 5"></div>
+            <button class="slider-btn prev">❮</button>
+            <button class="slider-btn next">❯</button>
         </div>
-
-        <button class="slider-btn prev">❮</button>
-        <button class="slider-btn next">❯</button>
     </div>
-    <div class="slider-dots"> </div>
+
+    <div class="slider-dots"></div>
 
 </body>
 </html>
+
